@@ -11,7 +11,7 @@ drive spec generation. **Never committed to the repo.**
 
 **Scope:** <one line: the user-facing behavior this gates>
 **Change surface:** PR(s) #<n>, ticket(s) <KEY[, KEY…]>
-**Version stamp:** <version> (origin/main)   **Gate spec:** tests/_release-gate/<lead>.spec.ts
+**Version stamp:** <version> (origin/main)   **Gate spec:** tests_end_to_end/e2e/tests/_release-gate/<lead-ticket>.spec.ts
 
 ## Happy path
 - [ ] Step 1 — <user action> → <observable result>
