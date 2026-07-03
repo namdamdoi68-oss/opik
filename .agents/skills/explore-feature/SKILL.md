@@ -71,7 +71,11 @@ Produce the **ScopeSpec**:
    `<version>`. OK?"
 2. **Skip check** — if the change is pure refactor / infra / docs with no user-facing behavior,
    say so, point at the skip label, and stop. This is the escape hatch for the "every user-facing
-   PR" policy.
+   PR" policy. Note two cases that *are* user-facing even though they look like config: a
+   capability-map / constants change that adds a user-visible option (e.g. a new model in a
+   dropdown → happy path: "open the page, the option is selectable"), and a backend-dominant
+   change whose only visible effect is subtle (e.g. a trace that should *not* appear in a default
+   list) — find the user-observable effect and gate that, don't skip.
 
 ### Version stamp
 
